@@ -1,3 +1,5 @@
+原先方案是用Ymodem实现升级，但由于阻塞问题，后续我自己编写了ISO15765来实现OTA升级
+A/B分区、crc校验、失败回滚是为了防止升级失败成砖的情况，在flash最后一页我定义了magic_num，由于flash先擦除后写入的特性，如果擦除参数区时突然重启，参数区全为F,重启进入bootloader后判断Magicnum是否为那个特定值，否的话就将magic_num重置为A区，解决了参数区被清空无法跳转的问题
 bootloader工程烧录ZET5,地址为0x8000000,Freertos项目工程烧录到0x8005000与0x8037000，CAN_TP_C8T6烧录在C8T6上
 CAN-Tx接C8T6的PA12，CAN-Rx接PA11。C8T6串口接PA9,PA10
 
