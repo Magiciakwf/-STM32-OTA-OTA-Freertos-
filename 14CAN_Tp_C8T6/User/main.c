@@ -6,11 +6,14 @@
 #include "delay.h"
 #include "CAN_Tp.h"
 
+volatile uint32_t g_SystemTick_ms = 0;//计数systick,在systick_handle使用
+
 int main()
 {
 	uint8_t pTxMsgArray = 0;	
 	uint8_t USART1_Recv_Buf[256];
 	uint8_t USART1_Recv_Flag = 0;
+
 //	uint8_t serial_cnt = 0;
 //	uint8_t Pci = 0;
 //	uint8_t SN = 0;
@@ -34,6 +37,12 @@ int main()
 		{
 			flow_ctr();
 		}
+		
+		Call_BusOff_Recovery_Process();
+		
+
+		
+		
 		
 //////////////////////接收八字节数据/////////////////////////////		
 //	if (USART_GetFlagStatus(USART1, USART_FLAG_RXNE) == SET)

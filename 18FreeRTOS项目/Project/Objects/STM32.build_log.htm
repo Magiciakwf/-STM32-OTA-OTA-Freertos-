@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: μVision V5.36.0.0
 Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 1 k20050225@outlook.com, 1, LIC=76F5U-SI4X6-QD5KD-8482L-TD5A4-8UKSR
+License Information: 1 k20050225@outlook.com, 1, LIC=65ISZ-JP04N-VECHA-1D1UC-DJACK-596B2
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
@@ -21,19 +21,99 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-D:\CODE\keil_std\18FreeRTOS项目\Project\STM32.uvprojx
+D:\CODE\keil_std\STM32_OTA_System\18FreeRTOS项目\Project\STM32.uvprojx
 Project File Date:  02/04/2026
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil5\ARM\ARMCC\Bin'
-Build target 'Target 1'
-compiling user_ledtask.c...
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
 Warning: C3910W: Old syntax, please use '--c99'.
-..\BSP\user_ledtask.h(8): warning:  #1-D: last line of file ends without a newline
+compiling core_cm3.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_crc.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_bkp.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling misc.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_it.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\SYSTEM\sys.h(62): warning:  #1-D: last line of file ends without a newline
   #endif
-..\BSP\user_ledtask.c(22): warning:  #1-D: last line of file ends without a newline
-  }
-..\BSP\user_ledtask.c: 2 warnings, 0 errors
+..\User\stm32f10x_it.c: 1 warning, 0 errors
+compiling stm32f10x_cec.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling main.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\SYSTEM\sys.h(62): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\start_task.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\main.c: 2 warnings, 0 errors
+compiling stm32f10x_adc.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_can.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_dac.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_dma.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_exti.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_iwdg.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_gpio.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_fsmc.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_i2c.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_pwr.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_rtc.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_rcc.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_usart.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_wwdg.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_spi.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stm32f10x_tim.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling croutine.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling event_groups.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling list.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling stream_buffer.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling queue.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling Delay.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\System\Delay.c(8): warning:  #550-D: variable "fac_us"  was set but never used
+  static u32 fac_us = 0;
+..\System\Delay.c: 1 warning, 0 errors
+compiling timers.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling heap_4.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling tasks.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling port.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling sys.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\System\sys.h(62): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\System\sys.c: 1 warning, 0 errors
+compiling crc.c...
+Warning: C3910W: Old syntax, please use '--c99'.
 compiling start_task.c...
 Warning: C3910W: Old syntax, please use '--c99'.
 ..\BSP\start_task.h(18): warning:  #1-D: last line of file ends without a newline
@@ -59,11 +139,179 @@ Warning: C3910W: Old syntax, please use '--c99'.
 ..\BSP\start_task.c(41): warning:  #1-D: last line of file ends without a newline
   }
 ..\BSP\start_task.c: 11 warnings, 0 errors
+compiling Serial.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\start_task.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\Serial.c: 1 warning, 0 errors
+compiling user_task1.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\user_task1.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\CAN_Tp.h(47): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\start_task.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_flash.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ota.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_task1.c(68): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\user_task1.c(17): warning:  #177-D: variable "cmd"  was declared but never referenced
+  	uint8_t cmd = 0;
+..\BSP\user_task1.c: 7 warnings, 0 errors
+compiling user_task2.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\user_task2.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\start_task.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_flash.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ota.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\CAN_Tp.h(47): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_task2.c(32): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\user_task2.c(10): warning:  #177-D: variable "cmd"  was declared but never referenced
+  static uint8_t cmd;
+..\BSP\user_task2.c: 7 warnings, 0 errors
+compiling MyCan.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\MyCan.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\CAN_Tp.h(47): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\start_task.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\MyCan.c(103): warning:  #177-D: variable "xHigherPriorityTaskWoken"  was declared but never referenced
+  		BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+..\BSP\MyCan.c: 4 warnings, 0 errors
+compiling adc.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\adc.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\adc.c(51): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\adc.c: 2 warnings, 0 errors
+compiling CAN_Tp.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\CAN_Tp.h(47): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\MyCAN.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_flash.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ota.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\start_task.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\CAN_Tp.c(100): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\CAN_Tp.c(100): warning:  #940-D: missing return statement at end of non-void function "CAN_TP_Recv" 
+  }
+..\BSP\CAN_Tp.c(22): warning:  #177-D: variable "erase_flag"  was declared but never referenced
+  	uint8_t erase_flag = 0;
+..\BSP\CAN_Tp.c: 8 warnings, 0 errors
+compiling iwdg.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\iwdg.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\iwdg.c(11): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\iwdg.c: 2 warnings, 0 errors
+compiling key.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\key.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\key.c: 1 warning, 0 errors
+compiling flash.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\flash.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\flash.c: 1 warning, 0 errors
+compiling ymodem.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+compiling ota.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\ota.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ota_cfg.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_Ymodem.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_flash.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\CAN_Tp.h(47): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ota.c: 5 warnings, 0 errors
+compiling ota_cfg.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\ota_cfg.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\flash.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ota_cfg.c(63): warning:  #1-D: last line of file ends without a newline
+  	
+..\BSP\ota_cfg.c: 3 warnings, 0 errors
+compiling user_flash.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\user_flash.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ota.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ota_cfg.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\flash.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\CAN_Tp.h(47): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_flash.c: 5 warnings, 0 errors
+compiling user_Ymodem.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\user_Ymodem.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\flash.h(17): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ota.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\ota_cfg.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_Ymodem.c(71): warning:  #177-D: variable "pcount"  was declared but never referenced
+  	uint32_t pcount = 0;
+..\BSP\user_Ymodem.c: 5 warnings, 0 errors
+compiling user_temp.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\user_temp.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_temp.c(17): warning:  #223-D: function "Serial_Printf" declared implicitly
+  		Serial_Printf("Temp Value is %.1f\r\n",temperature);
+..\BSP\user_temp.c(22): warning:  #223-D: function "Serial_Printf" declared implicitly
+  		Serial_Printf("VCC Value is %.1f\r\n",vol);
+..\BSP\user_temp.c(26): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\user_temp.c: 4 warnings, 0 errors
+compiling led.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\led.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\led.c(13): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\led.c: 2 warnings, 0 errors
+compiling user_ledtask.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\user_ledtask.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\user_ledtask.c(22): warning:  #1-D: last line of file ends without a newline
+  }
+..\BSP\user_ledtask.c: 2 warnings, 0 errors
 linking...
 Program Size: Code=17536 RO-data=336 RW-data=196 ZI-data=22316  
 FromELF: creating hex file...
-After Build - User command #2: fromelf.exe --bin -o "D:\CODE\keil_std\18FreeRTOS项目\Project\Objects\STM32.bin" "D:\CODE\keil_std\18FreeRTOS项目\Project\Objects\STM32.axf"
-".\Objects\STM32.axf" - 0 Error(s), 15 Warning(s).
+After Build - User command #2: fromelf.exe --bin -o "D:\CODE\keil_std\STM32_OTA_System\18FreeRTOS项目\Project\Objects\STM32.bin" "D:\CODE\keil_std\STM32_OTA_System\18FreeRTOS项目\Project\Objects\STM32.axf"
+".\Objects\STM32.axf" - 0 Error(s), 129 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -76,7 +324,7 @@ Package Vendor: Keil
   D:\keil5\Keil\STM32F1xx_DFP\2.4.1\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: ¦ÌVision V5.36.0.0
 Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 1 k20050225@outlook.com, 1, LIC=76F5U-SI4X6-QD5KD-8482L-TD5A4-8UKSR
+License Information: 1 k20050225@outlook.com, 1, LIC=65ISZ-JP04N-VECHA-1D1UC-DJACK-596B2
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
@@ -21,13 +21,58 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-D:\CODE\keil_std\14CAN_Tp_C8T6\Project\STM32.uvprojx
+D:\CODE\keil_std\STM32_OTA_System\14CAN_Tp_C8T6\Project\STM32.uvprojx
 Project File Date:  01/18/2026
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-".\Objects\STM32.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\MyCAN.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\key.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\CAN_Tp.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\main.c(13): warning:  #177-D: variable "pTxMsgArray"  was declared but never referenced
+  	uint8_t pTxMsgArray = 0;	
+..\User\main.c(14): warning:  #177-D: variable "USART1_Recv_Buf"  was declared but never referenced
+  	uint8_t USART1_Recv_Buf[256];
+..\User\main.c(15): warning:  #177-D: variable "USART1_Recv_Flag"  was declared but never referenced
+  	uint8_t USART1_Recv_Flag = 0;
+..\User\main.c: 6 warnings, 0 errors
+compiling MyCan.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\MyCan.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\MyCan.c: 1 warning, 0 errors
+compiling CAN_Tp.c...
+Warning: C3910W: Old syntax, please use '--c99'.
+..\BSP\CAN_Tp.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\MyCAN.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\BSP\CAN_Tp.c(31): warning:  #177-D: variable "FF_Flag"  was declared but never referenced
+  	static uint8_t FF_Flag = 0;
+..\BSP\CAN_Tp.c(34): warning:  #177-D: variable "send_size"  was declared but never referenced
+  	uint32_t send_size = 0 ;
+..\BSP\CAN_Tp.c(37): warning:  #177-D: variable "Loop_cnt"  was declared but never referenced
+  	uint32_t Loop_cnt = CANTP_PacketSize/8+1;
+..\BSP\CAN_Tp.c(96): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "FF_Flag"  (declared at line 98)
+            variable "cmd"  (declared at line 99)
+            variable "payload_len"  (declared at line 100)
+            variable "pdata"  (declared at line 101)
+  		goto _exit;
+  		^
+..\BSP\CAN_Tp.c(210): warning:  #1-D: last line of file ends without a newline
+  //}
+..\BSP\CAN_Tp.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=8892 RO-data=416 RW-data=88 ZI-data=1552  
+FromELF: creating hex file...
+".\Objects\STM32.axf" - 0 Error(s), 17 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -40,7 +85,7 @@ Package Vendor: Keil
   D:\keil5\Keil\STM32F1xx_DFP\2.4.1\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

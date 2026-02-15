@@ -2253,41 +2253,41 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       240         14          0          0        256       1069   adc.o
-       488         36          0         20       1032       2485   can_tp.o
-         0          0          0          0          0      14540   event_groups.o
-       184         36          0          0          0       2152   flash.o
-       520         58          0         28      17408       4535   heap_4.o
-        44          6          0          0          0        439   key.o
-        44          6          0          0          0        435   led.o
-       148          0          0          0          0       2990   list.o
-        48         18          0          0          0     278767   main.o
-       132         22          0          0          0       1607   misc.o
-       348         26          0          0        540       2363   mycan.o
-       104         18          0          0          0       1113   ota.o
-       404         48          0          4          0       8884   port.o
-      1778         16          0          0          0      16397   queue.o
-       270         20          0          0          0       2676   serial.o
-       260         98          0         12          0       1545   start_task.o
-        36          8        304          0       1024        844   startup_stm32f10x_hd.o
-       426         16          0          0          0       8156   stm32f10x_adc.o
-      1134         10          0          0          0       5824   stm32f10x_can.o
-        84          0          0          0          0       2849   stm32f10x_dma.o
-       286          0          0          0          0       3124   stm32f10x_gpio.o
-        20          0          0          0          0       2449   stm32f10x_it.o
-       332         44          0         20          0       5677   stm32f10x_rcc.o
-       274          6          0          0          0       4132   stm32f10x_usart.o
-       328         30          0          0          0       1873   system_stm32f10x.o
-      3426        412          0         64        200      34793   tasks.o
-       874        100          0         20         40      10248   timers.o
-       276         66          0          8          0       2233   user_flash.o
-        56          8          0          1          0        690   user_ledtask.o
-       356        128          0          4       1040      16123   user_task1.o
-        60         10          0          0        520        706   user_task2.o
-       276         82          0         14        256       1056   user_temp.o
+       240         14          0          0        256       1117   adc.o
+       488         36          0         20       1032       2549   can_tp.o
+         0          0          0          0          0      14608   event_groups.o
+       184         36          0          0          0       2232   flash.o
+       520         58          0         28      17408       4635   heap_4.o
+        44          6          0          0          0        455   key.o
+        44          6          0          0          0        455   led.o
+       148          0          0          0          0       3086   list.o
+        48         18          0          0          0     279019   main.o
+       132         22          0          0          0       1659   misc.o
+       348         26          0          0        540       2443   mycan.o
+       104         18          0          0          0       1149   ota.o
+       404         48          0          4          0       9080   port.o
+      1778         16          0          0          0      16701   queue.o
+       270         20          0          0          0       2748   serial.o
+       260         98          0         12          0       1597   start_task.o
+        36          8        304          0       1024        860   startup_stm32f10x_hd.o
+       426         16          0          0          0       8340   stm32f10x_adc.o
+      1134         10          0          0          0       5952   stm32f10x_can.o
+        84          0          0          0          0       2901   stm32f10x_dma.o
+       286          0          0          0          0       3192   stm32f10x_gpio.o
+        20          0          0          0          0       2549   stm32f10x_it.o
+       332         44          0         20          0       5793   stm32f10x_rcc.o
+       274          6          0          0          0       4212   stm32f10x_usart.o
+       328         30          0          0          0       1945   system_stm32f10x.o
+      3426        412          0         64        200      35373   tasks.o
+       874        100          0         20         40      10492   timers.o
+       276         66          0          8          0       2313   user_flash.o
+        56          8          0          1          0        722   user_ledtask.o
+       356        128          0          4       1040      16171   user_task1.o
+        60         10          0          0        520        738   user_task2.o
+       276         82          0         14        256       1104   user_temp.o
 
     ----------------------------------------------------------------------
-     13276       1342        336        196      22316     442774   Object Totals
+     13276       1342        336        196      22316     446190   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         20          0          0          1          0          0   (incl. Padding)
 
@@ -2349,8 +2349,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     17536       1444        336        196      22316     436914   Grand Totals
-     17536       1444        336        196      22316     436914   ELF Image Totals
+     17536       1444        336        196      22316     440330   Grand Totals
+     17536       1444        336        196      22316     440330   ELF Image Totals
      17536       1444        336        196          0          0   ROM Totals
 
 ==============================================================================
